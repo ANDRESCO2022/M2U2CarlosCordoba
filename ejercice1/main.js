@@ -62,6 +62,7 @@ const crearTabla = function () {
   title_table.appendChild(th4);
 };
 const searchId = function () {
+  let id = parseInt(document.getElementById("id1").value);
   let registros = materias.filter((element) => element.id === id);
   const valorMatriculas = registros
     .map((element) => element.precio)
@@ -112,7 +113,6 @@ const searchId = function () {
   valores.appendChild(art2);
   valores.appendChild(art3);
 };
-let id = parseInt(document.getElementById("id1").value);
 const Matricular = function () {
   crearTabla();
   searchId();
